@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-sign',
@@ -6,12 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign.component.scss']
 })
 export class SignComponent implements OnInit {
-  name: string;
+  @ViewChild('form', { static: false }) form: any;
+  item: any = {};
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  save() {
+    const { item } = this;
+
+    if (this.form.valid) {
+      this.form.controls.username.setErrors({custom: 'Erro que veio da API'});
+    }
   }
 
 }
