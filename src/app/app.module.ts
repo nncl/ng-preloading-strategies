@@ -7,6 +7,7 @@ import { SignComponent } from './pages/sign/sign.component';
 import { InputModule } from './components/inputs/input/input.module';
 import { FormsModule } from '@angular/forms';
 import { TabsModule } from './components/tabs/tabs/tabs.module';
+import { InputCheckboxModule } from './components/inputs/input-checkbox/input-checkbox.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TabsModule } from './components/tabs/tabs/tabs.module';
     AppRoutingModule,
     InputModule,
     FormsModule,
-    TabsModule
+    TabsModule,
+    InputCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
