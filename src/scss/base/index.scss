@@ -1,0 +1,51 @@
+:root {
+  --base-color-light: #FFFFFF;
+  --base-color-light-2: #F2F2F2;
+
+  --base-color-assertive: #6E41E2;
+
+  --base-color-medium: #6B6B6B;
+
+  --base-color-dark: #111111;
+
+  --base-font: 'Roboto', sans-serif;
+  --base-font-title: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  background-color: var(--base-color-light-2);
+  font-family: var(--base-font);
+  font-weight: 300;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--base-font-title);
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--base-color-assertive);
+}

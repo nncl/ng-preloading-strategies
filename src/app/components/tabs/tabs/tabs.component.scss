@@ -1,0 +1,37 @@
+.tabs {
+  position: relative;
+  margin-left: -6px;
+  margin-right: -6px;
+  color: var(--base-color-medium);
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 52px);
+    height: 1px;
+    background-color: var(--base-color-assertive);
+    bottom: 0;
+    left: -26px;
+  }
+
+  a {
+    color: inherit;
+    padding: 16px 0;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+  }
+
+  li {
+    line-height: 24px;
+    display: inline-block;
+    padding: 0 6px;
+  }
+
+  .selected {
+    color: var(--base-color-dark);
+
+    a {
+      border-color: var(--base-color-assertive);
+    }
+  }
+}

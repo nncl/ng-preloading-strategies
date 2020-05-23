@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pokemons"
+    }
+  },
+  "defaultProject": "pokemons",
+  "cli": {
+    "analytics": false
+  }
 }
