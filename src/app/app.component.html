@@ -1,1 +1,26 @@
+<ul>
+  <li>
+    <a routerLink="/">
+      Home
+    </a>
+  </li>
+  <li>
+    <a routerLink="/pokemons"
+       (mouseover)="preloadBundle('pokemons')">
+      List
+    </a>
+  </li>
+  <li>
+    <a routerLink="/form"
+       (mouseover)="preloadBundle('form')">
+      Form
+    </a>
+  </li>
+  <li>
+    <button type="submit" (click)="preloadAll()">
+      Preload all
+    </button>
+  </li>
+</ul>
+
 <router-outlet></router-outlet>

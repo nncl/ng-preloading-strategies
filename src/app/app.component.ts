@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OnDemandPreloadService } from './core/strategies/on-demand/on-demand-preload.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pokemons';
+  constructor(private preloadOnDemandService: OnDemandPreloadService) {
+  }
+
+  preloadAll() {
+    this.preloadOnDemandService.startPreload('*');
+  }
+
+  preloadBundle(routePath) {
+    this.preloadOnDemandService.startPreload(routePath);
+  }
 }
